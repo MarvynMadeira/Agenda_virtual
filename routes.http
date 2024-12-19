@@ -1,0 +1,65 @@
+POST  http://localhost:3000/tasks
+Content-Type: application/json
+
+{
+    "title": "Aula NodeJS",
+    "description": "Me aprofundar mais em NodeJS e subir projetos no git",
+    "category": "Homework",
+    "deadline": "14/01/2025",
+    "priority": true,
+    "finished": false
+}
+
+###
+
+POST  http://localhost:3000/tasks
+Content-Type: application/json
+
+{
+    "title": "Caminhar 8 mil passos",
+    "description": "O objetivo é manter essa rotina diária",
+    "category": "Self-Realization",
+    "deadline": " ",
+    "priority": true,
+    "finished": false
+}
+
+###
+
+POST  http://localhost:3000/tasks
+Content-Type: application/json
+
+{
+    "title": "Rumo ao Jr",
+    "description": "Até final de janeiro de 2025 estar pelo menos 80% apto a trabalhar com programação",
+    "category": "Goals",
+    "deadline": "28/01/2025",
+    "priority": true,
+    "finished": false
+}
+
+###
+
+GET http://localhost:3000/tasks
+
+###
+
+GET http://localhost:3000/tasks/676467e96c327c0b84b1b552
+###
+
+DELETE http://localhost:3000/tasks/676466b86c327c0b84b1b524
+
+###
+
+PUT http://localhost:3000/tasks/676467e96c327c0b84b1b552
+Content-Type: application/json
+
+{
+    "title": "Caminhar 20 mil passos",
+    "description": "O objetivo é ficar magro",
+    "category": "Self-Realization",
+    "deadline": "24/05/2025",
+    "priority": true,
+    "finished": false
+}
+
